@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>RESULT| MongoFLask Result App</title>
+        <style>
+            *{
+                margin: 0;
+            }
+            .top{
+                background-color:rgba(223, 7, 7, 0.664);
+            }
+            .i1{
+                color: white;
+                font-size: 35px;
+                margin-left: 700px;
+                
+                }
+            form{
+                margin-top: 50px;
+                color:white;
+                font-size: 20px;
+            }
+            .bg{
+
+               background-color: #80ced6;
+            }
+            
+            .c{
+                display: inline-block;
+                color: black
+                margin-top: 400px;
+                vertical-align: top;
+            }
+            .left{
+                margin-left: 50px;;
+            }
+            .i1,.i2{
+                display: inline-block;
+                vertical-align: top;
+            }
+            .i2{
+                margin-left: 590px;
+                background-color: yellow;
+                margin-top: 7px;
+                border-radius: 20px;
+                padding: 4px;
+                font-family: Arial, Helvetica, sans-serif;
+
+            }
+            .i2 a{
+                text-decoration: none;
+                color: black;
+            }
+           
+        </style>
+    </head>
+    <body class="bg">
+        <div class="top">
+            <h1 class="i1">RESULT</h1>
+            <p class="i2"><a href="/register">ADMIN</a></p>
+        </div>
+       
+        <center>
+            <form action="/result" method="GET">
+                Name : <input type="text" name = "name" required>
+                Roll No : <input type="number" name="roll" required>
+                <input type="submit">
+            </form>
+            
+        </center>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Admin | MongoFLask Result App</title>
+        <style>
+            *{
+                margin: 0;
+            }
+            .i1{
+                color: white;
+                font-size: 35px;
+                background-color:rgba(223, 7, 7, 0.664);
+                }
+            form{
+                margin-top: 50px;
+                color:white;
+                font-size: 20px;
+            }
+            .bg{
+                background-image: url('https://img.freepik.com/free-photo/stationery-pencils-paper-clip-pen-eraser-white-bucket-still-life-green-school-board-background-copy-space-flat-lay-top-view-concept-education_7280-1693.jpg?size=626&ext=jpg');
+                background-repeat:no-repeat;
+                background-size: 100% 100%;
+            }
+            
+            .c{
+                display: inline-block;
+                color: white;
+                margin-top: 220px;
+                vertical-align: top;
+            }
+            .left{
+                margin-left: 50px;;
+            }
+            tr,th,td{
+                border: solid rgb(247, 245, 245);
+                color:rgb(255, 255, 255);
+            }
+            table,img{
+                display: inline-block;
+                margin-top: 40px;
+            }
+            img{
+                border-radius: 50px;
+            }
+            .er{
+                color:red;
+                font-weight: 700;
+            }
+            .buttonb{
+                background-color: yellow;
+                border-radius: 40px;
+                width: 100px;
+                margin-top: 20px;
+            }
+            .buttonb a{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body class="bg">
+        <center>
+            <h1 class="i1">ADMIN - PORTAL LOGIN</h1>
+            <form method="POST" action="/register"> 
+                <table border="1"> 
+                    <tr> 
+                        <td>Username : </td> 
+                        <td> 
+                            <input type="text" name="uname" size="25" placeholder="Enter Your Username"> 
+                        </td> 
+                    </tr> 
+                    <tr> 
+                        <td>Password : </td> 
+                        <td><input type="password" name="passwd" size="25" placeholder="Enter Your Password"></td> 
+                    </tr> 
+                </table> 
+                <p> 
+                    <input type="submit" value="LOGIN" name="b1"> 
+                </p> 
+            </form> 
+            <center><p class="er">{{error}}</p>
+                <div class="buttonb">
+                    <p><a href="/">GO BACK</a></p>
+                </div>
+            </center>
+            <div class="p">
+                <div class="c">
+                    <img src="/static/mongodb.png"width="250px">
+                </div>
+                <div class="c">
+                    <img class="left" src="/static/python.png" width="85px">
+                </div>
+                <div class="c">
+                    <img src="/static/image.png" width="112px">
+                </div>
+            </div>
+        </center>
+    </body>
+</html>
